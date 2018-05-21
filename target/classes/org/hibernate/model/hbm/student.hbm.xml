@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="org.hibernate.model.Student" table="STUDENT7">
+		<id name="sid" type="java.lang.Long">
+			<column name="SID"/>
+			<generator class="assigned"/><!-- 自定义主键 -->
+		</id>	
+		<property name="sname" type="java.lang.String">
+			<column name="SNAME"/>
+		</property>
+		<property name="gender" type="java.lang.String">
+			<column name="GENDER"/>
+		</property>
+		<property name="birthday" type="java.util.Date">
+			<column name="BIRTHDAY"/>
+		</property>
+		<property name="address" type="java.lang.String">
+			<column name="ADDRESS"/>
+		</property>
+	</class>
+</hibernate-mapping>
